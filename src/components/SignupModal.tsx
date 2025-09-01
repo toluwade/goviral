@@ -185,7 +185,7 @@ export default function SignupModal({ isOpen, onClose, onSwitchToLogin }: Signup
                 <Checkbox 
                   id="terms"
                   checked={acceptTerms}
-                  onCheckedChange={setAcceptTerms}
+                  onCheckedChange={(checked) => setAcceptTerms(checked === true)}
                 />
                 <Label htmlFor="terms" className="text-sm text-muted-foreground leading-5">
                   I agree to the{' '}
@@ -199,7 +199,7 @@ export default function SignupModal({ isOpen, onClose, onSwitchToLogin }: Signup
                 <Checkbox 
                   id="privacy"
                   checked={acceptPrivacy}
-                  onCheckedChange={setAcceptPrivacy}
+                  onCheckedChange={(checked) => setAcceptPrivacy(checked === true)}
                 />
                 <Label htmlFor="privacy" className="text-sm text-muted-foreground leading-5">
                   I agree to the{' '}

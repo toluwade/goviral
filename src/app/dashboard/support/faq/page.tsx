@@ -269,7 +269,7 @@ export default function DashboardFAQPage() {
         {/* Contact Support */}
         <div className="bg-primary/10 border border-primary/20 p-6 text-center">
           <h3 className="text-lg font-medium text-foreground mb-2">
-            Can't find what you're looking for?
+            Can&rsquo;t find what you&rsquo;re looking for?
           </h3>
           <p className="text-muted-foreground mb-4">
             Our support team is here to help with any questions not covered in the FAQ.

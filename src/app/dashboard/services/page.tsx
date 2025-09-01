@@ -299,7 +299,7 @@ export default function ServicesPage() {
     return matchesPlatform && matchesCategory && matchesSearch;
   });
 
-  const handleOrderNow = (service: any) => {
+  const handleOrderNow = (service: typeof services[0]) => {
     // This would typically navigate to the new order page with pre-filled data
     console.log('Order service:', service);
     alert(`Redirecting to order page for ${service.name}`);

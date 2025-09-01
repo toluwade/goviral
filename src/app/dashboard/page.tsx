@@ -169,7 +169,7 @@ export default function DashboardPage() {
           <h1 className="text-3xl font-bold font-oswald text-foreground mb-2">
             Dashboard <span className="text-primary">Overview</span>
           </h1>
-          <p className="text-muted-foreground">Welcome back! Here's what's happening with your account.</p>
+          <p className="text-muted-foreground">Welcome back! Here&rsquo;s what&rsquo;s happening with your account.</p>
         </div>
 
         {/* Wallet Card */}

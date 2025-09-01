@@ -71,7 +71,7 @@ export default function FAQPage() {
               Frequently Asked <span className="text-primary">Questions</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Find answers to common questions about GoViral's SMM services and platform.
+              Find answers to common questions about GoViral&rsquo;s SMM services and platform.
             </p>
           </div>
 
@@ -120,7 +120,7 @@ export default function FAQPage() {
               Still have questions?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Can't find the answer you're looking for? Our support team is here to help.
+              Can&rsquo;t find the answer you&rsquo;re looking for? Our support team is here to help.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a

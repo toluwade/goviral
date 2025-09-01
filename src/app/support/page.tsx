@@ -92,7 +92,7 @@ export default function SupportPage() {
               Support <span className="text-primary">Center</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We're here to help you succeed. Get the support you need, when you need it.
+              We&rsquo;re here to help you succeed. Get the support you need, when you need it.
             </p>
           </div>
 

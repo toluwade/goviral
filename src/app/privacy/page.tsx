@@ -163,7 +163,7 @@ export default function PrivacyPage() {
           <div className="bg-secondary/20 border border-border p-6 mb-8">
             <h2 className="text-xl font-bold text-foreground mb-4">Introduction</h2>
             <p className="text-muted-foreground leading-relaxed">
-              GoViral ("we", "our", or "us") is committed to protecting your privacy and personal information. 
+              GoViral (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting your privacy and personal information. 
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when 
               you use our social media marketing (SMM) panel services, visit our website, or interact with us 
               in any way. Please read this policy carefully to understand our practices regarding your personal 
@@ -193,7 +193,7 @@ export default function PrivacyPage() {
           <div className="mt-12 p-6 bg-primary/10 border border-primary/20">
             <h3 className="text-lg font-bold text-foreground mb-2">Effective Date</h3>
             <p className="text-muted-foreground">
-              This Privacy Policy is effective as of September 1, 2025. By using GoViral's services, 
+              This Privacy Policy is effective as of September 1, 2025. By using GoViral&rsquo;s services, 
               you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function PrivacyPage() {
               Questions About Privacy?
             </h3>
             <p className="text-muted-foreground mb-6">
-              If you have any questions or concerns about our privacy practices, we're here to help.
+              If you have any questions or concerns about our privacy practices, we&rsquo;re here to help.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a

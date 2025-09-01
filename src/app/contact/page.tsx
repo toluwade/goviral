@@ -88,7 +88,7 @@ export default function ContactPage() {
               Contact <span className="text-primary">Us</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Have questions or need assistance? We're here to help you succeed with GoViral.
+              Have questions or need assistance? We&rsquo;re here to help you succeed with GoViral.
             </p>
           </div>
 

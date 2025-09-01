@@ -133,7 +133,7 @@ export default function LoginModal({ isOpen, onClose, onSwitchToSignup }: LoginM
                     <Checkbox 
                       id="remember"
                       checked={rememberMe}
-                      onCheckedChange={setRememberMe}
+                      onCheckedChange={(checked) => setRememberMe(checked === true)}
                     />
                     <Label htmlFor="remember" className="text-sm text-muted-foreground">
                       Remember me
@@ -155,7 +155,7 @@ export default function LoginModal({ isOpen, onClose, onSwitchToSignup }: LoginM
               </form>
 
               <div className="text-center text-sm text-muted-foreground">
-                Don't have an account?{' '}
+                Don&rsquo;t have an account?{' '}
                 <button
                   type="button"
                   onClick={onSwitchToSignup}
@@ -169,7 +169,7 @@ export default function LoginModal({ isOpen, onClose, onSwitchToSignup }: LoginM
             /* Forgot Password Form */
             <form onSubmit={handleForgotPassword} className="space-y-4">
               <p className="text-sm text-muted-foreground text-center">
-                Enter your email address and we'll send you a link to reset your password.
+                Enter your email address and we&rsquo;ll send you a link to reset your password.
               </p>
 
               <div className="space-y-2">

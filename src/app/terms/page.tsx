@@ -227,7 +227,7 @@ export default function TermsPage() {
               Terms and <span className="text-primary">Conditions</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
-              Please read these terms carefully before using GoViral's services. By using our platform, you agree to these terms.
+              Please read these terms carefully before using GoViral&rsquo;s services. By using our platform, you agree to these terms.
             </p>
             <p className="text-sm text-muted-foreground">
               Last updated: September 1, 2025
@@ -238,9 +238,9 @@ export default function TermsPage() {
           <div className="bg-secondary/20 border border-border p-6 mb-8">
             <h2 className="text-xl font-bold text-foreground mb-4">Agreement Overview</h2>
             <p className="text-muted-foreground leading-relaxed">
-              These Terms and Conditions ("Terms") govern your use of GoViral's social media marketing services, 
-              website, and related services (collectively, the "Service"). These Terms constitute a legally binding 
-              agreement between you ("User" or "you") and GoViral ("we", "us", or "our"). By accessing or using 
+              These Terms and Conditions (&ldquo;Terms&rdquo;) govern your use of GoViral&rsquo;s social media marketing services, 
+              website, and related services (collectively, the &ldquo;Service&rdquo;). These Terms constitute a legally binding 
+              agreement between you (&ldquo;User&rdquo; or &ldquo;you&rdquo;) and GoViral (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;). By accessing or using 
               our Service, you acknowledge that you have read, understood, and agree to be bound by these Terms.
             </p>
           </div>
