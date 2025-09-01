@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/Layout";
 
-const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({ 
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: '--font-oswald'
+});
 
 export const metadata: Metadata = {
-  title: "Your App - Modern Web Application",
-  description: "A clean Next.js application with TypeScript and Tailwind CSS",
-  keywords: "Next.js, React, TypeScript, Tailwind CSS",
-  authors: [{ name: "Your Name" }],
+  title: "GoViral - Transform Your Content",
+  description: "Transform your content into viral sensations. We help brands and creators amplify their reach and engagement.",
+  keywords: "viral marketing, content creation, social media, digital marketing",
+  authors: [{ name: "GoViral Team" }],
   openGraph: {
-    title: "Your App",
-    description: "A modern web application",
+    title: "GoViral - Transform Your Content",
+    description: "Transform your content into viral sensations",
     type: "website",
   },
 };
@@ -25,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-        className={`${inter.className} antialiased`}
+        className={`antialiased font-helvetica ${oswald.variable}`}
         suppressHydrationWarning={true}
       >
         <Layout>{children}</Layout>
