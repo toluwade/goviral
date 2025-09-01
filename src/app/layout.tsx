@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 import "./globals.css";
-import Layout from "@/components/Layout";
 
 const oswald = Oswald({ 
   subsets: ["latin"],
@@ -32,7 +31,7 @@ export default function RootLayout({
         className={`antialiased font-helvetica ${oswald.variable}`}
         suppressHydrationWarning={true}
       >
-        <Layout>{children}</Layout>
+        {children}
       </body>
     </html>
   );

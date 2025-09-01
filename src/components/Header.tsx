@@ -3,10 +3,24 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import LoginModal from '@/components/LoginModal';
+import SignupModal from '@/components/SignupModal';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSignupOpen, setIsSignupOpen] = useState(false);
+
+  const handleSwitchToSignup = () => {
+    setIsLoginOpen(false);
+    setIsSignupOpen(true);
+  };
+
+  const handleSwitchToLogin = () => {
+    setIsSignupOpen(false);
+    setIsLoginOpen(true);
+  };
 
   return (
     <header className="bg-background border-b border-border">
@@ -108,10 +122,17 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="secondary" className="bg-secondary text-foreground hover:bg-secondary/80 px-12">
+            <Button 
+              variant="secondary" 
+              className="bg-secondary text-foreground hover:bg-secondary/80 px-12"
+              onClick={() => setIsLoginOpen(true)}
+            >
               Login
             </Button>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-12">
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-12"
+              onClick={() => setIsSignupOpen(true)}
+            >
               Signup
             </Button>
           </div>
@@ -148,10 +169,17 @@ export default function Header() {
                 Contact
               </Link>
               <div className="px-3 py-2 space-y-2">
-                <Button variant="secondary" className="w-full bg-secondary text-foreground hover:bg-secondary/80 px-12">
+                <Button 
+                  variant="secondary" 
+                  className="w-full bg-secondary text-foreground hover:bg-secondary/80 px-12"
+                  onClick={() => setIsLoginOpen(true)}
+                >
                   Login
                 </Button>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-12">
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-12"
+                  onClick={() => setIsSignupOpen(true)}
+                >
                   Signup
                 </Button>
               </div>
@@ -159,6 +187,19 @@ export default function Header() {
           </div>
         )}
       </nav>
+
+      {/* Login and Signup Modals */}
+      <LoginModal 
+        isOpen={isLoginOpen}
+        onClose={() => setIsLoginOpen(false)}
+        onSwitchToSignup={handleSwitchToSignup}
+      />
+      
+      <SignupModal 
+        isOpen={isSignupOpen}
+        onClose={() => setIsSignupOpen(false)}
+        onSwitchToLogin={handleSwitchToLogin}
+      />
     </header>
   );
 }
