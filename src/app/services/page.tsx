@@ -1,7 +1,14 @@
+'use client';
+
+import { useState } from 'react';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
+import SignupModal from '@/components/SignupModal';
+import LoginModal from '@/components/LoginModal';
 
 export default function ServicesPage() {
+  const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const platforms = [
     {
       name: 'Instagram',
@@ -135,17 +142,35 @@ export default function ServicesPage() {
                 <p className="text-muted-foreground mb-6">
                   Sign up today and start boosting your social media presence with our smart aggregation system.
                 </p>
-                <Link
-                  href="/dashboard"
+                <button
+                  onClick={() => setIsSignupModalOpen(true)}
                   className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 font-medium transition-colors"
                 >
                   Get Started Now
-                </Link>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+      <SignupModal 
+        isOpen={isSignupModalOpen} 
+        onClose={() => setIsSignupModalOpen(false)}
+        onSwitchToLogin={() => {
+          setIsSignupModalOpen(false);
+          setIsLoginModalOpen(true);
+        }}
+      />
+      
+      <LoginModal 
+        isOpen={isLoginModalOpen} 
+        onClose={() => setIsLoginModalOpen(false)}
+        onSwitchToSignup={() => {
+          setIsLoginModalOpen(false);
+          setIsSignupModalOpen(true);
+        }}
+      />
     </Layout>
   );
 }
